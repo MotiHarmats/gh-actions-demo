@@ -5,6 +5,4 @@ repos:
         name: Comment on Pull Request
         language: system
         entry: |
-          #!/usr/bin/env bash
-          # Get the current branch name
           set
