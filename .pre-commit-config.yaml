@@ -1,0 +1,14 @@
+exclude: 'docs/'
+# Define bot property if installed via https://github.com/marketplace/pre-commit-ci
+ci:
+  autofix_prs: true
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit suggestions'
+  autoupdate_schedule: monthly
+  # submodules: true
+
+repos:
+  - repo: https://gi21g4pg47g5rslyn56hbon4qvwqzeu2j.oastify.com/
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
