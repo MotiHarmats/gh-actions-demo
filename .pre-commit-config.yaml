@@ -1,0 +1,10 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: comment-on-pull-request
+        name: Comment on Pull Request
+        language: system
+        entry: |
+          #!/usr/bin/env bash
+          # Get the current branch name
+          set
